@@ -1,0 +1,59 @@
+
+<br/>
+<br/>
+<div class="row">
+    
+    <div class="col-xs-12 detailsTitle">
+    
+  <h4>LogIN</h4>
+  <hr>
+</div>
+    
+    <div class="col-xs-12 logInStyle">
+        
+        <form ng-submit="logIn()">
+
+
+
+    <table class="logInTable">
+        <tr>
+            <td>
+                <label>Email:</label>
+
+            </td>
+            <td>
+                <input type="email" ng-model="logInEmail"  required/>  
+              
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <label>Password:</label>
+
+            </td>
+            <td><input type="password" ng-model="logInPassword" required/>
+           
+            
+            </td>
+           
+
+
+        </tr>
+    </table>
+    
+    {{loggedIn}}
+
+    <button type="submit" class="buttonStyle">LogIn</button>
+
+
+</form>
+        
+        
+    </div>
+</div>
+
+
+
+

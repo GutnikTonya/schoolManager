@@ -1,0 +1,436 @@
+html, body {
+    height: 100%;
+}
+
+
+hr{
+    font-weight:bold;
+    color:black;
+    border-top: 1.7px solid #eee;
+
+
+}
+
+
+
+/*Manu*/
+.header{
+
+
+}
+
+.navigation{
+
+    font-family: 'Fredericka the Great', cursive;
+
+    font-size: 1.5vw;
+    padding-top: 2%;
+
+    padding-left: 0;
+
+
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding-right: 1.5vw;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    color: #E71135;
+}
+
+.userLogINDetails{
+
+
+    font-family: 'Poiret One', cursive;
+    font-family: 'Frijole', cursive;
+    font-size: 0.8vw;
+    padding-top: 1.7%;
+}
+
+
+
+
+
+#logedUserImage{
+    width:20%
+
+
+}
+
+
+
+
+.logo{
+    width: 4.1vw;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    display: inline-block;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+
+
+}
+
+
+#logOut{
+
+
+    color:black;
+    text-decoration:black;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-size: 0.5vw;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    float:right;
+
+}
+
+#logOut:hover{
+
+    background-color:#0EBAE8;
+    color:#FDED28;
+
+
+}
+
+.logedUserName{
+
+
+    float:right;
+}
+
+
+/*END Manu*/
+
+
+
+.mainView{
+
+    padding:1%; 
+    background-color:white;
+
+
+
+}
+
+
+
+
+
+/*School*/
+
+.listStudentsCourses{
+
+
+    align-items: center;
+    background-color: #F9F9F7;
+    border-style: solid;
+    border-color: #eee;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 1%;
+    font-size:0.8vw;
+    font-family: 'Dosis', sans-serif;
+
+}
+.mainContainerView{
+    background-color: #F9F9F7;
+    margin-left: 13%;
+    border-style: solid;
+    border-color: #eee;
+    padding: 2vw;
+  
+  
+
+
+
+
+
+
+}
+
+.listTable {
+ 
+    border-collapse:separate;
+    font-size:1vw;
+}
+
+.listTable td {
+    height: 6.5vw;
+}
+
+
+
+.tableTitle{
+
+
+    font-family: 'Kranky', cursive;
+    font-size: 1.6vw;
+
+
+}
+
+.oneTDTable{
+
+    padding:0;
+}
+
+
+
+
+
+
+.glyphicon{
+    font-weight:100 !important;
+    font-size: 1vw;
+
+}
+
+
+
+.glyphicon:hover{
+
+
+    color:#03B3CA;
+
+
+}
+
+
+
+@keyframes  randomUser {
+    15% { color: #FBF000; } 
+    30% { color: #E82246; } 
+    45% { color: #71368A; } 
+    60% { color: #07C2E3; }
+    75% { #48C75C; }  
+}
+
+
+@keyframes  randomCourse{
+    15% { color: #48C75C; } 
+    30% { color: #07C2E3; } 
+    45% { color:#71368A; } 
+    60% { color: #E82246; }
+    75% { #FBF000; }  
+}
+
+.styleCourseList:hover{
+
+
+    color: #fff;
+    -webkit-animation: randomCourse 2s infinite;
+    animation: randomCourse 2s infinite;
+
+
+}
+
+
+.styleStudentList:hover{
+
+
+    color: #fff;
+    -webkit-animation: randomUser 2s infinite;
+    animation: randomUser 2s infinite;
+
+
+}
+
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+
+}
+
+
+.listImg{
+
+    width:5vw;
+
+
+}
+
+.teacherListImg{
+
+    width:5vw;
+
+}
+
+
+
+
+
+
+/*viewmainDetails*/
+
+
+.divButtonEdit{
+
+    float:right;
+}
+
+.buttonEdit{
+  font-size: 1.2vw;
+    font-weight: bold;
+    float: right;
+}
+
+
+
+.detailsTitle{
+    
+    font-family: 'Kranky', cursive;
+}
+
+.detailsTitle h4{
+    font-size: 1.3vw;
+    font-weight: bold;
+    
+    
+} 
+
+
+.detailImg{
+
+  width: 19vw;
+    padding: 1vw;
+
+
+}
+
+.detailTable{
+   
+    font-size: 1.2vw;
+    border-spacing: 0.7vw;
+    border-collapse: separate;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 0.5vw;
+}
+
+
+.detailsStudentCourses{
+   padding:1.5vw;
+   font-family: 'Dosis', sans-serif; 
+   font-size: 0.7vw;
+    font-weight: bold;
+   
+    
+    
+}
+
+.detailsstrinCourse{
+    
+    font-family: 'Kranky', cursive;
+    font-weight: bold;
+    font-size: 1.2vw;
+    
+}
+
+/*.colorImg{
+    
+     filter: none;
+    -webkit-filter: grayscale(0%);
+    
+}*/
+
+
+
+
+
+
+.editForm{
+    
+    
+
+    
+    
+}
+
+.editImg{
+    
+    width: 9.2vw;
+}
+
+.editDetails{
+    
+    border-collapse:separate;
+    font-size:1vw;
+    font-family: 'Dosis', sans-serif;
+        
+}
+
+.buttonStyle{
+    
+    color: black;
+    text-decoration: black;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    
+    
+}
+
+
+.buttonStyle:hover{
+
+    background-color:#0EBAE8;
+    color:#FDED28;
+
+
+}
+
+
+.spanCountCourseStudents{
+    
+    font-family: 'Kranky', cursive;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+
+
+.countUser{
+    
+    font-family: 'Kranky', cursive;
+    font-size: 1.3vw;
+    font-weight: bold;
+    
+    
+}
+
+
+.logInStyle{
+    
+      font-family: 'Fredericka the Great', cursive;
+
+    font-size: 1.3vw;
+    padding-top: 2%;
+
+
+    
+}
+
+
+.logInTable td{
+    
+    padding-right: 1vw;
+   
+}

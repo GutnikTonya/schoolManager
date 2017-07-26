@@ -1,0 +1,58 @@
+<div class="row">
+         
+         <div class="col-xs-3 listStudentsCourses">
+           
+                   
+             
+                   <table class="listTable">
+                     <tr>
+                         <th class="tableTitle">Teachers </th>
+                         <th><span class="glyphicon glyphicon-plus" aria-hidden="true" ng-click="MainContainerPage('AddEditTeacher','new')"></span></th>
+                      </tr>  
+              
+   
+              
+                        <tr ng-repeat="teacher in teachers" class="styleCourseList" >  
+                            
+                             <td ng-click="MainContainerPage('AddEditTeacher',teacher.id)">
+                                <img src="./img/{{teacher.imageFileName}}" class="teacherListImg" alt=""/>
+                                
+                                
+                            </td>
+                            
+                <td ng-click="MainContainerPage('AddEditTeacher',teacher.id)" class="styleStudentList" >
+                    
+                   {{teacher.firstName}} {{teacher.lastName}}
+                    
+                </td>
+          </tr>
+          
+              
+</table>                 
+                 
+             
+             
+             
+             
+            </div>
+            
+            <div class="col-xs-7">
+                
+                
+                <div ng-include="MainContainerView" class="mainContainerView" >
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        

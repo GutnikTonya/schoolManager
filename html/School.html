@@ -1,0 +1,117 @@
+<div class="row">
+    
+
+    
+         
+         <div class="col-xs-4 listStudentsCourses">
+           
+                   
+             <div class="col-xs-6 oneTDTable">
+                   <table class="listTable">
+                     <tr>
+                         <th class="tableTitle">Students </th>
+                         <th><span class="glyphicon glyphicon-plus" aria-hidden="true" ng-click="MainContainerPage('AddEditStudent','new')" ng-show="showIfTeacher"></span></th>
+                      </tr>  
+              
+   
+              
+                        <tr ng-repeat="student in students" class="styleCourseList" >   
+                            <td ng-click="MainContainerPage('DetailsStudent',student.id)">
+                                <img src="./img/{{student.imageFileName}}" class="listImg" alt=""/>
+                                
+                                
+                            </td>
+                <td ng-click="MainContainerPage('DetailsStudent',student.id)"  >
+                    
+                    
+                   {{student.firstName}} {{student.lastName}}
+                    
+                </td>
+                
+          </tr>
+          
+              
+</table>                 
+                 
+             </div>
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             <div class="col-xs-6 oneTDTable">
+                 
+                 <table class="listTable">
+              <tr>
+                <th class="tableTitle">Courses</th> 
+                <th> <span class="glyphicon glyphicon-plus " aria-hidden="true" ng-click="MainContainerPage('AddEditCourse','new')" ng-show="showIfTeacher"></span> </th>
+              </tr>  
+              
+    
+              
+          <tr ng-repeat="course in courses" class="styleCourseList">
+              
+               <td ng-click="MainContainerPage('DetailsCourse',course.id)">
+                                <img src="./img/{{course.imageFileName}}" class="listImg" alt=""/>
+                                
+                                
+                            </td>
+              
+              
+                <td ng-click="MainContainerPage('DetailsCourse',course.id)">
+                    {{course.name}}
+                    
+                </td>
+          </tr>
+          
+          
+ 
+    
+               
+               
+           
+
+          
+               
+                
+               
+            
+  
+  
+</table>
+             </div>
+             
+             
+             
+            </div>
+            
+            <div class="col-xs-6">
+                
+                
+                <div ng-include="MainContainerView" class="mainContainerView">
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+            </div>
+            
+            
+   
+            
+            
+        </div>
+        
+        

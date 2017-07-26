@@ -1,0 +1,62 @@
+<div class="row">
+<div class="col-xs-12 detailsTitle">
+    
+  <h4>Add Course/Edit Course</h4>
+  <hr>
+</div>
+
+
+
+<div class="col-xs-12 editDetails">
+
+<form name="studentDetail" ng-submit="newCourseOrAddCourse()" class="editForm"  >
+
+
+    
+
+
+    <table>
+        <tr>
+            <td>
+                <span>Name:</span> 
+
+            </td>
+            <td><input type="text" name="name" ng-model="currentCourse.name" ng-value="currentCourse.name" pattern="^[a-zA-Z\u0590-\u05FF]+$" title="Example: math" required/>               
+        </tr>
+
+        <tr>
+            <td>
+                <span>Description:</span> 
+
+            </td>
+            <td> <input type="text" name="description" ng-model="currentCourse.description" ng-value="currentCourse.description" pattern="^[a-zA-Z\u0590-\u05FF]+$" title="Example: math" required/></td>
+        </tr>
+
+        
+        <tr>
+            <td> <span>Picture:</span></td>
+            <td><img ng-src="./img/{{currentCourse.imageFileName}}" ng-show="showPic" class="editImg"/>
+                <input type="file" onchange='angular.element(this).scope().filesChanged(this)' ng-required="requireImage" />
+            </td>
+        </tr>  
+        <br/>
+        
+
+    </table>
+    
+    
+    <br/>
+    
+    
+             <span class="spanCountCourseStudents" ng-show='showTotalStudents'>{{'Total '+courseUsers.length+' students taking this course'}}</span>
+                        
+        
+    <br/>
+    <br/>
+    <button type="submit" class="buttonStyle">save</button>
+    <button ng-click="deleteCourse()" ng-show='showDelete' class="buttonStyle">Delete</button>
+
+
+</form>
+</div>
+    </div>

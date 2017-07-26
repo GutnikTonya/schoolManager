@@ -1,0 +1,94 @@
+
+<div class="col-xs-12 detailsTitle">
+    
+    <div class="col-xs-6 detailsTitle">
+    
+    <h4>Student details</h4>
+</div>
+    
+    
+<div class="col-xs-6 divButtonEdit">
+    <button class="buttonEdit buttonStyle"  ng-click="MainContainerPage('AddEditStudent',user.id)" ng-show="showIfTeacher">Edit</button>
+</div>
+    <div class="col-xs-12">
+        <hr>
+        
+    </div>
+    
+</div>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-xs-6">
+        <img ng-src="./img/{{user.imageFileName}}" class="detailImg colorImg"/>
+
+    </div>
+    
+    
+    <div class="col-xs-6">
+        
+        <table class="detailTable">
+            <tr>
+                <th>
+                     {{user.firstName}} {{user.lastName}}
+                </th>
+               
+            </tr>
+            <tr>
+                <td>
+                    {{user.phone}}
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    {{user.email}}
+                </td>
+                
+            </tr>
+            
+        </table>
+          
+        
+        
+
+
+    </div>
+
+
+
+</div>
+
+<div class="row">
+   
+
+    <div class="col-xs-12 detailsStudentCourses" >
+        <h3 class="detailsstrinCourse">Student courses:</h4>
+        <br/>
+
+
+   <table>
+            <tr>
+                <td ng-repeat="course in userCourses">
+                    <img ng-src="./img/{{course.imageFileName}}" class="colorImg" width="100" height="100"/>
+                    <br/>
+{{course.name}} 
+
+                </td>
+               
+
+            </tr>
+
+
+
+
+        </table>
+
+
+
+    </div>
+</div>
